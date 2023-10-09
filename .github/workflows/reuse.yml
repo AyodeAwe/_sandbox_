@@ -18,3 +18,7 @@ jobs:
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
+    # another step to echo hello world
+    - name: hello
+      run: |
+        echo "hello world!"
